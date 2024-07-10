@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Baskervville SC", serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 10px;
+
+}
+
+.logo {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.lists {
+    list-style: none;
+    display: inline;
+    margin: 0px 30px;
+
+}
+
+.links {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+
+/* to give psuedo class, to give decoration , special effect */
+.links:hover {
+    color: rgb(193, 2, 2);
+}
+
+.home-content {
+    margin: 13% 0px 0px 8%;
+}
+
+#username {
+    font-size: 50px;
+    margin: 20px;
+    margin-left: -10px;
+}
+
+.lname {
+    color: rgb(255, 166, 0);
+}
+
+#user-details {
+    line-height: 1.2;
+}
+
+#download {
+    text-decoration: none;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.home-img {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.grp1 {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.home-img:hover #shape {
+    bottom: 90px;
+}
+
+.home-img:hover #girl {
+    left: 40%;
+}
+
+.about {
+    margin: 18% 8% 0px 8%;
+}
+
+.session-head {
+    text-align: center;
+}
+
+.main-head {
+    font-size: 30px;
+}
+
+.sub-head {
+    font-size: 20px;
+    color: dimgrey;
+}
+
+.about-body {
+    margin: 50px;
+    align-items: center;
+    display: grid;
+    /* repeat-to repeat value
+    2 represent how many colm
+    1fr- space btwn colm */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+
+}
+
+.about-img>img {
+    width: 100%;
+}
+
+.about-content {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.information {
+    margin-top: 1.5rem;
+}
+
+.info-box {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-box>span {
+    margin-left: 1rem;
+
+}
+
+#skill {
+    margin: 8% 8% 0px 8%;
+}
+
+.myskill {
+    width: 100%;
+}
+
+.skill-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+
+}
+
+.bar-head,
+.bar-percentage {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.base-bar {
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px;
+}
+
+.html-bar {
+    background-color: orange;
+    width: 89%;
+}
+
+.css-bar {
+    background-color: orange;
+    width: 80%;
+}
+
+.js-bar {
+    background-color: orange;
+    width: 79%;
+}
+
+.react-bar {
+    background-color: orange;
+    width: 75%;
+}
+
+#contact {
+    margin: 4% 8%;
+
+}
+
+.icon-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+
+}
+
+.brands {
+    color: black;
+    font-size: 30px;
+}
+.icon:hover{
+   
+    background-image: linear-gradient(to bottom right,yellow,orange,red);
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 1s;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(30deg);
+    }
+    20%{
+        transform:rotate(-30deg);
+    }
+    40%{
+        transform:rotate(30deg);
+    }
+    60%{
+        transform:rotate(-30deg);
+    }
+    80%{
+        transform:rotate(30deg);
+    }
+    100%{
+        transform:rotate(-30deg);
+    }
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.up-arrow{
+    float: right;
+    margin: -40px 30px 40px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:darkgrey;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
